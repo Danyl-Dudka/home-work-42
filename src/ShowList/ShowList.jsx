@@ -9,8 +9,8 @@ export default function ShowList({ users, setUsers, isOpen, setIsOpen }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [userToDelete, setUserToDelete] = useState(null);
 
-    function showModal  () {
-      setIsModalOpen(true);
+        function showModal  () { // to remove
+      setIsModalOpen(true); 
     };
   
     function handleOk  () {
@@ -25,7 +25,7 @@ export default function ShowList({ users, setUsers, isOpen, setIsOpen }) {
 
 
     function handleOpen() {
-        setIsOpen(prev => !prev);
+        setIsOpen(prev => !prev); // maybee to remove
     }
 
     function deleteUser(userId) {
