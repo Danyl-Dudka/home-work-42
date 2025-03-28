@@ -4,17 +4,11 @@ import './../App/App.css';
 import { useNavigate } from 'react-router';
 import { v4 as uuidv4 } from 'uuid';
 
-export default function AddUserButton({ users, setUsers, isOpen, setIsOpen, openList }) {
+export default function AddUserForm({ users, setUsers, isOpen, setIsOpen, openList }) {
     const [newUserName, setNewUserName] = useState('');
     const [newUserPhone, setNewUserPhone] = useState('');
     const [newUserEmail, setNewUserEmail] = useState('');
-    const [isListOpen, setIsListOpen] = useState(false);
-    const [isAddOpen, setIsAddOpen] = useState(false);
     const navigate = useNavigate();
-
-    function handleOpen() {
-        setIsOpen();
-    }
 
     function openList() {
         navigate("/list");

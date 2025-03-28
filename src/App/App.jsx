@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import ListButton from '../ListButton/ListButton';
-import AddUserButton from '../AddUserButton/AddUserButton';
+import ShowList from '../ShowList/ShowList';
+import AddUserForm from '../AddUserForm/AddUserForm';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
           <Route
             path="/list"
             element={
-              <ListButton
+              <ShowList
                 users={users}
                 setUsers={setUsers}
                 isOpen={isListOpen}
@@ -52,7 +52,7 @@ function App() {
           <Route
             path="/add"
             element={
-              <AddUserButton
+              <AddUserForm
                 users={users}
                 setUsers={setUsers}
                 isOpen={isAddOpen}

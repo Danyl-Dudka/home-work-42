@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './ListButton.css';
 import {Modal} from 'antd';
 
-export default function ListButton({ users, setUsers, isOpen, setIsOpen }) {
+export default function ShowList({ users, setUsers, isOpen, setIsOpen }) {
     const [hiddenUsers, setHiddenUsers] = useState([])
     const [editingUser, setEditingUser] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
