@@ -1,0 +1,31 @@
+.list-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  
+  .list-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 50px;
+  }
+  
+  .list-element {
+    display: block;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    max-width: 300px;
+  }
+  .info-element {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .edit-button {
+    margin-left: 20px;
+  }
